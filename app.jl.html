@@ -1,0 +1,32 @@
+<header>
+    <h4>Pendulum Demo<br></h4>
+</header>
+<div class="row">
+    <div class="st-col col-12 col-sm st-module">
+        <h6>Initial conditions</h6>
+        <div class="row">
+            <div class="st-col col-12 col-sm st-module"><span id="ivj8l">Initial position [rad]:</span>
+                <q-slider id="i9tsk" v-model="theta_init" color="primary" :label="true" :max="6" :min="-6" :step="0.1" :markers="true" :dense="true" :label-always="true"></q-slider><span id="ivusr">Initial speed [rad/s]:</span>
+                <q-slider id="iat0w" v-model="omega_init" color="primary" :label="true" :max="2" :min="-2" :step="0.1" :dense="true" :markers="true" :label-always="true"></q-slider>
+            </div>
+        </div>
+    </div>
+    <div class="st-col col-12 col-sm st-module">
+        <h6>Parameters</h6>
+        <div class="row">
+            <div class="st-col col-12 col-sm st-module"><span id="io30d">Gravity [m/s^2]:</span>
+                <q-slider id="iscb9" v-model="g" color="primary" :label="true" :max="20" :min="-1" :step="0.01" :markers="true" :dense="true" :label-always="true"></q-slider><span id="i5584">Length of the pendulum [m]:</span>
+                <q-slider id="irq4g" v-model="L" color="primary" :label="true" :max="10" :min="0.1" :step="0.1" :dense="true" :markers="true" :label-always="true"></q-slider>
+            </div>
+        </div>
+    </div>
+</div>
+<plotly id="izduj" data="W3siZ2J0eXBlIjoiTGluZSBDaGFydCIsIngiOiIkX3t0aW1lc30iLCJ5IjoiJF97dGhldGFzfSIsInR5cGUiOiJzY2F0dGVyIiwibW9kZSI6ImxpbmVzIiwibmFtZSI6IlBvc2l0aW9uIFtyYWRdIiwibGluZSI6eyJjb2xvciI6IiM0NjQ2NzgifX0seyJnYnR5cGUiOiJMaW5lIENoYXJ0IiwieCI6IiRfe3RpbWVzfSIsInkiOiIkX3tvbWVnYXN9IiwidHlwZSI6InNjYXR0ZXIiLCJtb2RlIjoibGluZXMiLCJuYW1lIjoiU3BlZWQgW3JhZC9zXSJ9XQ==" config="e30=" layout="eyJsZWdlbmQiOnsib3JpZW50YXRpb24iOiJoIn0sInhheGlzIjp7InRpdGxlIjp7InRleHQiOiJUaW1lIFtzXSJ9fSwidGl0bGUiOiJSb3RhdGlvbmFsIFBvc2l0aW9uIGFuZCBTcGVlZCJ9"></plotly>
+<div class="row">
+    <div class="st-col col-12 col-sm st-module">
+        <plotly id="i6mfj" data="W3siZ2J0eXBlIjoiTGluZSBDaGFydCIsIngiOiIkX3t4fSIsInkiOiIkX3t5fSIsInR5cGUiOiJzY2F0dGVyIiwibW9kZSI6ImxpbmVzIiwibmFtZSI6IlBvc2l0aW9uIiwibGluZSI6eyJjb2xvciI6IiM2NDY0NjQifX1d" config="e30=" layout="eyJ0aXRsZSI6IlRyYWplY3RvcnkgKHgteSBjb29yZGluYXRlcykiLCJ4YXhpcyI6eyJ0aXRsZSI6eyJ0ZXh0IjoieCBjb29yZGluYXRlIFttXSJ9fSwieWF4aXMiOnsidGl0bGUiOnsidGV4dCI6InkgY29vcmRpbmF0ZSBbbV0ifX19"></plotly>
+    </div>
+    <div class="st-col col-12 col-sm st-module">
+        <plotly id="iha9g" data="W3siZ2J0eXBlIjoiTGluZSBDaGFydCIsIngiOiIkX3t0aW1lc30iLCJ5IjoiJF97eH0iLCJ0eXBlIjoic2NhdHRlciIsIm1vZGUiOiJsaW5lcyIsIm5hbWUiOiJ4IFttXSIsImxpbmUiOnsiY29sb3IiOiIjM2NhMGZmIn19LHsiZ2J0eXBlIjoiTGluZSBDaGFydCIsIngiOiIkX3t0aW1lc30iLCJ5IjoiJF97eX0iLCJ0eXBlIjoic2NhdHRlciIsIm1vZGUiOiJsaW5lcyIsIm5hbWUiOiJ5IFttXSIsImxpbmUiOnsiY29sb3IiOiIjZmY2NDY0In19XQ==" config="e30=" layout="eyJsZWdlbmQiOnsib3JpZW50YXRpb24iOiJ2In0sInhheGlzIjp7InRpdGxlIjp7InRleHQiOiJUaW1lIFtzXSJ9fSwidGl0bGUiOiJQb3NpdGlvbiAoeC15IGNvb3JkaW5hdGVzKSJ9"></plotly>
+    </div>
+</div>
